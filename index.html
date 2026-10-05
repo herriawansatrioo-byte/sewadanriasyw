@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rias YantiWachid | Jasa Rias Pengantin & Sewa Busana</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#F3E5AB',
+                            DEFAULT: '#D4AF37',
+                            dark: '#996515',
+                        },
+                        cream: '#FAF6F0'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased selection:bg-gold selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gold/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wider text-gray-900">
+                Rias <span class="text-gold-dark font-normal italic">YantiWachid</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:text-gold-dark transition-colors">Beranda</a>
+                <a href="#about" class="hover:text-gold-dark transition-colors">Tentang Kami</a>
+                <a href="#services" class="hover:text-gold-dark transition-colors">Layanan & Paket</a>
+                <a href="#portfolio" class="hover:text-gold-dark transition-colors">Portofolio</a>
+                <a href="#contact" class="hover:text-gold-dark transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://instagram.com/riasyantiwachid" target="_blank" class="w-10 h-10 rounded-full bg-cream flex items-center justify-center text-gray-700 hover:bg-gold hover:text-white transition-all">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20tertarik%20untuk%20konsultasi%20jadwal%20rias." target="_blank" class="bg-gold-dark text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gold transition-all shadow-sm flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-6 py-4 space-y-3">
+            <a href="#home" class="block text-sm font-medium py-1 hover:text-gold-dark">Beranda</a>
+            <a href="#about" class="block text-sm font-medium py-1 hover:text-gold-dark">Tentang Kami</a>
+            <a href="#services" class="block text-sm font-medium py-1 hover:text-gold-dark">Layanan & Paket</a>
+            <a href="#portfolio" class="block text-sm font-medium py-1 hover:text-gold-dark">Portofolio</a>
+            <a href="#contact" class="block text-sm font-medium py-1 hover:text-gold-dark">Kontak</a>
+            <div class="pt-2 flex space-x-3">
+                <a href="https://instagram.com/riasyantiwachid" target="_blank" class="w-9 h-9 rounded-full bg-cream flex items-center justify-center text-gray-700">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20tertarik%20konsultasi." target="_blank" class="flex-1 bg-gold-dark text-white text-center py-2 rounded-lg text-sm font-medium flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-cream via-white to-cream overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-block bg-gold-light/40 text-gold-dark text-xs uppercase tracking-widest px-3 py-1 rounded-full font-semibold">
+                    Professional MUA & Bridal Styling
+                </span>
+                <h1 class="font-serif text-4xl md:text-6xl font-bold leading-tight text-gray-900">
+                    Memancarkan Keanggunan <span class="italic text-gold-dark">Istimewa</span> di Hari Bahagia Anda
+                </h1>
+                <p class="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
+                    Menyediakan jasa tata rias pengantin profesional, busana adat tradisional nusantara, hingga gaun modern berkelas tinggi untuk momen abadi Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+                    <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20ingin%20cek%20ketersediaan%20jadwal." target="_blank" class="bg-gold-dark text-white px-8 py-3.5 rounded-full font-medium hover:bg-gold transition-all shadow-md text-center flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Cek Jadwal & Booking</span>
+                    </a>
+                    <a href="#portfolio" class="border border-gray-300 text-gray-700 px-8 py-3.5 rounded-full font-medium hover:border-gold-dark hover:text-gold-dark transition-all text-center">
+                        Lihat Portofolio
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative flex justify-center">
+                <div class="relative w-full max-w-md h-[450px] md:h-[520px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Rias Pengantin YantiWachid" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <p class="text-xs uppercase tracking-widest text-gold-light font-semibold">Signature Look</p>
+                            <h3 class="font-serif text-xl font-medium">Javanese Royal & Modern Bridal</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+                    Sentuhan Tangan Profesional Bersama <span class="text-gold-dark italic">YantiWachid</span>
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Dengan pengalaman bertahun-tahun di bidang tata rias dan penataan busana pengantin, kami mendedikasikan diri untuk memberikan hasil riasan yang sempurna, tahan lama, dan menonjolkan karakter alami kecantikan Anda.
+                </p>
+                <ul class="space-y-3 text-gray-700 text-sm font-medium">
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-gold-dark"></i>
+                        <span>Produk kosmetik premium berkualitas tinggi & higienis</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-gold-dark"></i>
+                        <span>Koleksi busana pengantin dan aksesori lengkap (Adat & Modern)</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-gold-dark"></i>
+                        <span>Pelayanan ramah, tepat waktu, dan penuh ketelitian</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=500&q=80" alt="Detail Rias" class="rounded-xl shadow-lg h-64 object-cover">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Model Rias" class="rounded-xl shadow-lg h-64 object-cover mt-6">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & PACKAGES -->
+    <section id="services" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span class="text-gold-dark text-xs uppercase tracking-widest font-semibold">Layanan & Paket Sewa</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Pilihan Paket Terbaik untuk Anda</h2>
+                <p class="text-gray-600 text-sm">Sesuaikan kebutuhan hari spesial Anda dengan paket pilihan kami yang fleksibel.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold/20 flex flex-col justify-between hover:shadow-md transition-all">
+                    <div>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Paket Akad / Pemberkatan</h3>
+                        <p class="text-gray-500 text-sm mb-6">Sempurna untuk momen sakral akad nikah.</p>
+                        <ul class="space-y-3 text-sm text-gray-700 mb-8">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Rias Pengantin (Akad/Pemberkatan)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Retouch 1x Sesi</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Sewa Busana Sepasang & Aksesori</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Rias Orang Tua (2 Orang)</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20tertarik%20dengan%20Paket%20Akad." target="_blank" class="w-full bg-cream text-gray-800 text-center py-3 rounded-xl text-sm font-medium hover:bg-gold-dark hover:text-white transition-all">
+                        Pesan via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Paket 2 (Featured) -->
+                <div class="bg-gradient-to-b from-gray-900 to-gray-800 text-white rounded-2xl p-8 shadow-xl border-2 border-gold flex flex-col justify-between relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-gray-900 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                        Paling Populer
+                    </span>
+                    <div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Paket Full Resepsi & Akad</h3>
+                        <p class="text-gray-300 text-sm mb-6">Layanan lengkap untuk hari bahagia tanpa repot.</p>
+                        <ul class="space-y-3 text-sm text-gray-200 mb-8">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold"></i><span>Rias Akad & Resepsi (2 Busana Berbeda)</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold"></i><span>Sewa Busana Pengantin & Among Tamu</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold"></i><span>Rias Orang Tua & Pagar Ayu</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold"></i><span>Free Test Makeup Pengantin</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20tertarik%20dengan%20Paket%20Full%20Resepsi." target="_blank" class="w-full bg-gold text-gray-900 text-center py-3 rounded-xl text-sm font-semibold hover:bg-gold-light transition-all">
+                        Pesan via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gold/20 flex flex-col justify-between hover:shadow-md transition-all">
+                    <div>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Paket Wisuda & Event</h3>
+                        <p class="text-gray-500 text-sm mb-6">Tampil menawan di momen wisuda atau pesta.</p>
+                        <ul class="space-y-3 text-sm text-gray-700 mb-8">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Makeup Wisuda / Pesta / Lamaran</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Penataan Rambut / Sanggul Modern</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-gold-dark"></i><span>Sewa Kebaya / Busana Pesta</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20tertarik%20dengan%20Paket%20Wisuda/Event." target="_blank" class="w-full bg-cream text-gray-800 text-center py-3 rounded-xl text-sm font-medium hover:bg-gold-dark hover:text-white transition-all">
+                        Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO GALLERY -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span class="text-gold-dark text-xs uppercase tracking-widest font-semibold">Galeri Portofolio</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Karya & Sentuhan Kami</h2>
+                <p class="text-gray-600 text-sm">Lihat koleksi riasan pengantin tradisional dan modern karya Rias YantiWachid.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group relative rounded-xl overflow-hidden shadow-md h-80">
+                    <img src="https://images.unsplash.com/photo-1594552072238-b8a3da72aeae?auto=format&fit=crop&w=600&q=80" alt="Traditional Wedding" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-serif text-lg">Adat Jawa Klasik</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-xl overflow-hidden shadow-md h-80">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Modern Bridal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-serif text-lg">Modern International Look</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-xl overflow-hidden shadow-md h-80">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Engagement Look" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white font-serif text-lg">Lamaran & Engagement</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://instagram.com/riasyantiwachid" target="_blank" class="inline-flex items-center space-x-2 text-gold-dark font-medium hover:underline">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <span>Lihat lebih banyak karya di Instagram @riasyantiwachid</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-12 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div class="space-y-4">
+                <h3 class="font-serif text-2xl font-bold">Rias YantiWachid</h3>
+                <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                    Solusi terpercaya untuk jasa rias pengantin, tata rias acara, dan penyewaan busana dengan hasil yang elegan dan memukau.
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://instagram.com/riasyantiwachid" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6285640783029" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold transition-all">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-serif text-lg font-semibold text-gold-light">Hubungi Kami Cepat</h4>
+                <p class="text-gray-400 text-sm">Konsultasikan tanggal acara dan ketersediaan jadwal Anda langsung melalui WhatsApp.</p>
+                <a href="https://wa.me/6285640783029?text=Halo%20Rias%20YantiWachid,%20saya%20ingin%20bertanya%20mengenai%20layanan%20rias." target="_blank" class="inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Chat WhatsApp Admin</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Rias YantiWachid. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
